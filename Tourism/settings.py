@@ -26,12 +26,28 @@ SECRET_KEY = 'django-insecure-xfe7m*0k8mtr3ral$g(+!gk^_#x2t5i0ilbpnw(nhy0pzlxk0k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    
+    #'wagtail.contrib.forms',
+    #'wagtail.contrib.redirects',
+    #'wagtail.embeds',
+    #'wagtail.sites',
+    #'wagtail.users',
+    #'wagtail.snippets',
+    #'wagtail.documents',
+    #'wagtail.images',
+    #'wagtail.search',
+    #'wagtail.admin',
+    #'wagtail',
+
+    #'taggit',
+    #'modelcluster',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +74,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'Tourism.urls'
@@ -147,3 +164,79 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # URLs Re routes
 LOGIN_URL = '/authentication/login/'
+
+"""
+WAGTAILADMIN_BASE_URL = 'http://sacredgem.com'
+
+ADMINS = [
+    ('trophydevelopers', 'trophydevelopersug@gmail.com'),
+]
+MANAGERS = ADMINS
+
+# Default to dummy email backend. Configure dev/production/local backend
+# as per https://docs.djangoproject.com/en/stable/topics/email/#email-backends
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+
+# Hosts/domain names that are valid for this site; required if DEBUG is False
+ALLOWED_HOSTS = ['127.0.0.1']
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = 'change-me'
+
+EMAIL_SUBJECT_PREFIX = '[Wagtail] '
+
+INTERNAL_IPS = ('127.0.0.1', '10.0.2.2')
+
+# A sample logging configuration. The only tangible logging
+# performed by this configuration is to send an email to
+# the site admins on every HTTP 500 error when DEBUG=False.
+# See https://docs.djangoproject.com/en/stable/topics/logging for
+# more details on how to customize your logging configuration.
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler'
+        }
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    }
+}
+
+
+# WAGTAIL SETTINGS
+
+# This is the human-readable name of your Wagtail install
+# which welcomes users upon login to the Wagtail admin.
+WAGTAIL_SITE_NAME = 'Sacred Gem Safaris'
+
+# Replace the search backend
+#WAGTAILSEARCH_BACKENDS = {
+#  'default': {
+#    'BACKEND': 'wagtail.search.backends.elasticsearch8',
+#    'INDEX': 'myapp'
+#  }
+#}
+
+# Wagtail email notifications from address
+# WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'wagtail@myhost.io'
+
+# Wagtail email notification format
+# WAGTAILADMIN_NOTIFICATION_USE_HTML = True
+
+# Reverse the default case-sensitive handling of tags
+TAGGIT_CASE_INSENSITIVE = True
+"""

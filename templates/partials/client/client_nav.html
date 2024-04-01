@@ -12,31 +12,54 @@
                     <i class="fas fa-arrow-left"></i>
                     BACK
                 </span>
+                
                 <button class="nav-anchor-btn">Uganda</button>
                 <div class="nav-anchor-droper">
                     <a href="{% url 'client:main_destination_page' %}" class="main-page">The perl of africa</a>
-                    <a href="{% url 'client:particular_destination_page' %}">Kidepo NP</a>
-                    <a href="{% url 'client:particular_destination_page' %}">Marchison falls NP</a>
-                    <a href="{% url 'client:particular_destination_page' %}">bwindi impernatrable NP</a>
+                    <a href="{% url 'client:kidepo' %}">Kidepo </a>
+                    <a href="{% url 'client:murchison' %}">murchison falls </a>
+                    <a href="{% url 'client:bwindi' %}">bwindi impernatrable </a>
+                    <a href="{% url 'client:buhoma' %}">Buhoma Lodge </a>
+                    <a href="{% url 'client:mutanda' %}">Mutanda Lodge </a>
+                    <a href="{% url 'client:nkuringo' %}">Nkuringo Lodge </a>
                 </div>
+                <button class="nav-anchor-btn">Kenya</button>
+                <div class="nav-anchor-droper">
+                    <a href="{% url 'client:kenya_intinerary' %}">nairobi</a>
+                    <a href="{% url 'client:kenya_intinerary' %}">Masai mara </a>
+                    <a href="{% url 'client:kenya_intinerary' %}">lake naivasha </a>
+                    <a href="{% url 'client:kenya_intinerary' %}">amosele national park</a>
+                </div>
+                <button class="nav-anchor-btn">Rwanda</button>
+                <div class="nav-anchor-droper">
+                    <a href="{% url 'client:kigali_intinerary' %}">Volcanoes National Park</a>
+                    <a href="{% url 'client:kigali_intinerary' %}">Akagera National Park</a>
+                    <a href="{% url 'client:kigali_intinerary' %}">Kigali Genocide Memorial </a>
+                    <a href="{% url 'client:kigali_intinerary' %}">Lake Kivu</a>
+                    <a href="{% url 'client:kigali_intinerary' %}">Nyungwe National Park </a>        
+                </div>
+
             </div>
             
             <div class="nav-anchor-item">
-                <div class="nav-anchor-display">Experiences</div>  
+                <div class="nav-anchor-display">Experiences</div> 
+                
             </div>
             <div class="nav-sub-anchor">
                 <span class="nav-anchor-span">
                     <i class="fas fa-arrow-left"></i>
                     BACK
                 </span>
-                <button class="nav-anchor-btn">Experience</button>
-                <div class="nav-anchor-droper">
-                    <a href="{% url 'client:main_experience_page' %}" class="main-page">Experience Life</a>
-                    <a href="{% url 'client:particular_experience_page' %}">Kidepo Camp</a>
-                </div>
+                    <a href="{% url 'client:boat_safari' %}">Boat Safari </a>
+                    <a href="{% url 'client:game_drives' %}">Game Drives </a>       
+                    <a href="{% url 'client:gorilla_trekking' %}">Gorilla Trekking </a>          
+                    <a href="{% url 'client:guided_quad_bike' %}">Guided Quad Biking </a>      
+                    <a href="{% url 'client:helicopter_safari' %}">Helicopter Safari </a>           
+                    <a href="{% url 'client:rhino_tracking' %}">Rhino Tracking </a> 
             </div>
             
-            {% comment %} <div class="nav-anchor-item">
+            {% comment %} 
+            <div class="nav-anchor-item">
                 <div class="nav-anchor-display">Journeys</div>  
             </div>
             <div class="nav-sub-anchor">
@@ -45,7 +68,8 @@
                     BACK
                 </span>
                 <a href="{% url 'client:main_journey_page' %}">Journeys</a>
-            </div> {% endcomment %}
+            </div> 
+            {% endcomment %}
             
             <div class="nav-anchor-item">
                 <a href="{% url 'client:main_about_page' %}">About</a>  
@@ -58,7 +82,7 @@
             </div>
 
             <div class="nav-anchor-item">
-                <a href="{% url 'client:main_blog_page' %}">Blog</a>  
+                <a href="{% url 'client:main_blog_page' %}">Blogs</a>  
             </div>
         </div>
 
@@ -68,7 +92,7 @@
                 START YOUR TOUR
                 <i class="fas fa-globe-africa"></i>
             </a>
-            {% comment %} {% if user.is_authenticated %}
+            {% if user.is_authenticated %}
                 <a class="gold-btn" href="{% url 'authentication:logout' %}">Logout</a>
             {% else %}
                 <a class="gold-btn" href="{% url 'authentication:signup' %}">Signup</a>
@@ -76,7 +100,7 @@
             {% endif %}
             {% if user.is_staff %}
                 <a class="white-btn" href="{% url 'client:dashboard' %}">Dashboard</a>
-            {% endif %} {% endcomment %}
+            {% endif %} 
         </div>
     </div>
 

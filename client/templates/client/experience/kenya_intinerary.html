@@ -1,0 +1,411 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    kenya intinerary
+{% endblock title %}
+
+{% block content %}
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/elephant2.jpg' %}')">
+        <h1>Kenya safari culture</h1>
+        <hr>
+    </div>
+</section>
+
+<section class="tour-overview-section">
+    <div class="tour-overview-top-bar">
+        <h1>tour overview</h1>
+        <h3>
+            <p>trip to lake naivasha</p>
+            <p>tour through nairobi city</p>
+            <p>trip to masai mara National Park</p>
+            <p>game drive through masai mara National Park</p>
+            <p>trip to Amboseli National Park</p>
+            <p>game drive through Amboseli National Park</p>
+            <p>trip to Mount Kilimanjaro</p>
+            <p>12 day and nights</p>
+            <p>6 people</p>
+            <p>usd 3000 per person</p>
+        </h3>
+    </div>
+    <hr>
+    <div class="tour-overview-content">
+        <div class="tour-overview-img" style="background-image: url('{% static 'images/img36.jpg' %}')"></div>
+        <div class="tour-overview-details">
+            Experience a safari vacation in Kenya, the place where safari travel originated. The best Kenya tours and safaris include Big 5 game viewing, incredible natural beauty and cultural encounters, often combining Kenya’s top attractions with Tanzania and the tropical beaches of the Kenyan coast.
+            The safari bucket list for Kenya includes seeing the Great Migration in the legendary Masai Mara, Amboseli’s unforgettable views of Mount Kilimanjaro and Samburu’s leopards. Encounter fascinating cultures in authentic Masai villages and taste the flavours of Africa, India and Europe in the melting pot that is Swahili culture.
+        </div>
+    </div>
+</section>
+
+<section class="your-intinerary-section">
+    <h1>Kenya safari intinerary</h1>
+    <hr class="intinerary-vertical-line">
+    <div class="your-intinerary-profile">
+        <div class="intinerary-orb"></div>
+        <div class="day">Day 1</div>
+        <div class="intinerary-day-activity">trip to lake naivasha </div>
+        <div class="intinerary-slide-show">
+            <div class="intinerary-carousel" id="carousel1">
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/img34.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/img35.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/img33.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/img32.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/img24.jpg' %}')"></div>
+            </div>
+            <div class="intinerary-slide-show-controls">
+                <button class="prev-intinerary"><i class="fa fa-fas fa-angle-left"></i></button>
+                <button class="next-intinerary"><i class="fa fa-fas fa-angle-right"></i></button>
+            </div>
+            <div class="intinerary-text-message">
+                Kenya’s biggest attraction is the natural movement of mega-herds – wildebeest, zebra and gazelle – following the summer rains and sweet grasses in an annual pilgrimage called the Great Migration. Depending on when your Kenya safari takes place, you may witness the life-and-death struggles of the Mara River crossings or dramatic encounters with Africa’s top predators on the open plains.
+            </div>
+            <div class="intinerary-detailing">
+                <div class="intinerary-detailing-icon" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+                <p>1 night  . twin rooms</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="your-intinerary-profile intinerary-droper">
+        <div class="day">Day 2</div>
+        <div class="intinerary-day">
+            <div class="intinerary-day-activity">trip to masai mara National Park </div> 
+            <button class="drop-btn"><i class="fa fa-fas fa-plus"></i></button>
+        </div>
+        <div class="intinerary-orb intinerary-droper"></div>
+        <hr class="intinerary-horizontal-line">
+        <div class="intinerary-carosel-activity-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+    </div>
+
+    <div class="your-intinerary-profile intinerary-droper">
+        <div class="day">Day 3</div>
+        <div class="intinerary-day">
+            <div class="intinerary-day-activity">game drive through masai mara National Park</div> 
+            <button class="drop-btn"><i class="fa fa-fas fa-plus"></i></button>
+        </div>
+        <div class="intinerary-orb intinerary-droper"></div>
+        <hr class="intinerary-horizontal-line">
+        <div class="intinerary-carosel-activity-img" style="background-image: url('{% static 'images/img20.jpg' %}')"></div>
+    </div>
+    
+    <div class="your-intinerary-profile">
+        <div class="intinerary-orb"></div>
+        <div class="day">Day 4</div>
+        <div class="intinerary-day-activity">trip to Amboseli National Park </div>
+        <div class="intinerary-slide-show">
+            <div class="intinerary-carousel" id="carousel2">
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/Amboseli7.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/IMG-20180929-WA0006-1024x1024.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/Tortilis-Camp-Game-Drive.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/Elephants-at-Amboseli-National-Park-Kenya-Africa-Kenya-Safaris..jpeg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/seeing-elephants-on-a-game-drive-in-the-masai-mara.jpg' %}')"></div>
+            </div>
+            <div class="intinerary-slide-show-controls">
+                <button class="prev-intinerary"><i class="fa fa-fas fa-angle-left"></i></button>
+                <button class="next-intinerary"><i class="fa fa-fas fa-angle-right"></i></button>
+            </div>
+            <div class="intinerary-text-message">
+                Kenya offers a holiday for every traveller. From unforgettable Kenya family safaris that offer child-friendly activities and services, to exclusive hideaways for romantics, from adventurous honeymoons to small groups of friends and family celebrating a milestone anniversary. Whatever type of traveller you are, there’s not much that beats a Kenya holiday – the standards of service are high and Kenya’s top destinations offer luxury accommodation ranging from lavish, colonial-style lodges to funky boutique hotels and amenity-packed resorts.
+            </div>
+            <div class="intinerary-detailing">
+                <div class="intinerary-detailing-icon" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+                <p>1 night  . twin rooms</p>
+            </div>
+        </div>
+    </div>
+    <div class="your-intinerary-profile intinerary-droper">
+        <div class="day">Day 5</div>
+        <div class="intinerary-day">
+            <div class="intinerary-day-activity">game drive through Amboseli National Park</div> 
+            <button class="drop-btn"><i class="fa fa-fas fa-plus"></i></button>
+        </div>
+        <div class="intinerary-orb intinerary-droper"></div>
+        <hr class="intinerary-horizontal-line">
+        <div class="intinerary-carosel-activity-img" style="background-image: url('{% static 'images/Amboseli-National-Park-safari.jpg' %}')"></div>
+    </div>
+    <div class="your-intinerary-profile intinerary-droper">
+        <div class="day">Day 6</div>
+        <div class="intinerary-day">
+            <div class="intinerary-day-activity">trip to Mount Kilimanjaro</div> 
+            <button class="drop-btn"><i class="fa fa-fas fa-plus"></i></button>
+        </div>
+        <div class="intinerary-orb intinerary-droper"></div>
+        <hr class="intinerary-horizontal-line">
+        <div class="intinerary-carosel-activity-img" style="background-image: url('{% static 'images/kilimanjaro-camping-trekk.jpg' %}')"></div>
+    </div>
+    <div class="your-intinerary-profile">
+        <div class="intinerary-orb"></div>
+        <div class="day">Day 7</div>
+        <div class="intinerary-day-activity">trekk mount kilimanjaro </div>
+        <div class="intinerary-slide-show">
+            <div class="intinerary-carousel" id="carousel3">
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/how-many-days-to-climb-kilimanjaro.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/7-Days-Lemosho-route.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/mount-kilimanjaro-uhuru-peak-hike-1024x681.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/kili3-min-1.jpg' %}')"></div>
+                <div class="intinerary-carosel-img" style="background-image: url('{% static 'images/Kilimanjaro-hike.jpg' %}')"></div>
+            </div>
+            <div class="intinerary-slide-show-controls">
+                <button class="prev-intinerary"><i class="fa fa-fas fa-angle-left"></i></button>
+                <button class="next-intinerary"><i class="fa fa-fas fa-angle-right"></i></button>
+            </div>
+            <div class="intinerary-text-message">
+                It takes five to nine days in order to reach the Mount Kilimanjaro Summit and then descend to the finishing point. The more days spent on Mount Kilimanjaro the more likely you will successfully summit, as you will become more acclimatised to the altitude and will be less fatigued.
+            </div>
+            <div class="intinerary-detailing">
+                <div class="intinerary-detailing-icon" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+                <p>1 night  . twin rooms</p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="intinerary-addon-section">
+    <h3>we are untamed wilderness</h3>
+    <div class="intinerary-addon-content">
+        <div class="intinerary-addon-details">
+            <h1>Safari-Inclusions</h1>
+            <ul>
+                <li>safari guide</li>
+                <li>food</li>
+                <li>accommodation</li>
+                <li>transport</li>
+            </ul>
+        </div>
+        <div class="intinerary-addon-details">
+            <h1>Safari-exclusions</h1>
+            <ul>
+                <li>insurance</li>
+                <li>clothes</li>
+                <li>gear</li>
+                <li>alcohol</li>
+            </ul>
+        </div>
+    </div>
+    <a class="book-now">book now</a>
+    <a class="share-intinerary" href="">Share <i class="fa fa-share"></i></a>
+</section>
+
+<section class="booking-section" style="background-image: url('{% static 'images/img33.jpg' %}')">
+    <button class="close-booking"><i class="fas fa-times"></i></button>
+
+    <h1>Fill this out to complete booking</h1>
+
+    <form action="" method="post" class="booking-form">
+        {% csrf_token %}
+        <div class="input-form-group">
+            <input type="text" name="booker_names" placeholder="Name(s)">
+        </div>
+        <div class="input-form-group">
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-form-group">
+            <input type="text" name="country" list="countries" placeholder="Country Of Residence">
+            <datalist id="countries">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="Algeria">
+                <option value="Andorra">
+                <option value="Angola">
+                <option value="Antigua and Barbuda">
+                <option value="Argentina">
+                <option value="Armenia">
+                <option value="Australia">
+                <option value="Austria">
+                <option value="Azerbaijan">
+                <option value="Bahamas">
+                <option value="Bahrain">
+                <option value="Bangladesh">
+                <option value="Barbados">
+                <option value="Belarus">
+                <option value="Belgium">
+                <option value="Belize">
+                <option value="Benin">
+                <option value="Bhutan">
+                <option value="Bolivia">
+                <option value="Bosnia and Herzegovina">
+                <option value="Botswana">
+                <option value="Brazil">
+                <option value="Brunei">
+                <option value="Bulgaria">
+                <option value="Burkina Faso">
+                <option value="Burundi">
+                <option value="Cabo Verde">
+                <option value="Cambodia">
+                <option value="Cameroon">
+                <option value="Canada">
+                <option value="Central African Republic">
+                <option value="Chad">
+                <option value="Chile">
+                <option value="China">
+                <option value="Colombia">
+                <option value="Comoros">
+                <option value="Congo">
+                <option value="Costa Rica">
+                <option value="Croatia">
+                <option value="Cuba">
+                <option value="Cyprus">
+                <option value="Czechia">
+                <option value="Denmark">
+                <option value="Djibouti">
+                <option value="Dominica">
+                <option value="Dominican Republic">
+                <option value="Ecuador">
+                <option value="Egypt">
+                <option value="El Salvador">
+                <option value="Equatorial Guinea">
+                <option value="Eritrea">
+                <option value="Estonia">
+                <option value="Eswatini">
+                <option value="Ethiopia">
+                <option value="Fiji">
+                <option value="Finland">
+                <option value="France">
+                <option value="Gabon">
+                <option value="Gambia">
+                <option value="Georgia">
+                <option value="Germany">
+                <option value="Ghana">
+                <option value="Greece">
+                <option value="Grenada">
+                <option value="Guatemala">
+                <option value="Guinea">
+                <option value="Guinea-Bissau">
+                <option value="Guyana">
+                <option value="Haiti">
+                <option value="Honduras">
+                <option value="Hungary">
+                <option value="Iceland">
+                <option value="India">
+                <option value="Indonesia">
+                <option value="Iran">
+                <option value="Iraq">
+                <option value="Ireland">
+                <option value="Israel">
+                <option value="Italy">
+                <option value="Jamaica">
+                <option value="Japan">
+                <option value="Jordan">
+                <option value="Kazakhstan">
+                <option value="Kenya">
+                <option value="Kiribati">
+                <option value="Korea, North">
+                <option value="Korea, South">
+                <option value="Kosovo">
+                <option value="Kuwait">
+                <option value="Kyrgyzstan">
+                <option value="Laos">
+                <option value="Latvia">
+                <option value="Lebanon">
+                <option value="Lesotho">
+                <option value="Liberia">
+                <option value="Libya">
+                <option value="Liechtenstein">
+                <option value="Lithuania">
+                <option value="Luxembourg">
+                <option value="Madagascar">
+                <option value="Malawi">
+                <option value="Malaysia">
+                <option value="Maldives">
+                <option value="Mali">
+                <option value="Malta">
+                <option value="Marshall Islands">
+                <option value="Mauritania">
+                <option value="Mauritius">
+                <option value="Mexico">
+                <option value="Micronesia">
+                <option value="Moldova">
+                <option value="Monaco">
+                <option value="Mongolia">
+                <option value="Montenegro">
+                <option value="Morocco">
+                <option value="Mozambique">
+                <option value="Myanmar">
+                <option value="Namibia">
+                <option value="Nauru">
+                <option value="Nepal">
+                <option value="Netherlands">
+                <option value="New Zealand">
+                <option value="Nicaragua">
+                <option value="Niger">
+                <option value="Nigeria">
+                <option value="North Macedonia">
+                <option value="Norway">
+                <option value="Oman">
+                <option value="Pakistan">
+                <option value="Palau">
+                <option value="Panama">
+                <option value="Papua New Guinea">
+                <option value="Paraguay">
+                <option value="Peru">
+                <option value="Philippines">
+                <option value="Poland">
+                <option value="Portugal">
+                <option value="Qatar">
+                <option value="Romania">
+                <option value="Russia">
+                <option value="Kenya">
+                <option value="Saint Kitts and Nevis">
+                <option value="Saint Lucia">
+                <option value="Saint Vincent and the Grenadines">
+                <option value="Samoa">
+                <option value="San Marino">
+                <option value="Sao Tome and Principe">
+                <option value="Saudi Arabia">
+                <option value="Senegal">
+                <option value="Serbia">
+                <option value="Seychelles">
+                <option value="Sierra Leone">
+                <option value="Singapore">
+                <option value="Slovakia">
+                <option value="Slovenia">
+                <option value="Solomon Islands">
+                <option value="Somalia">
+                <option value="South Africa">
+                <option value="South Sudan">
+                <option value="Spain">
+                <option value="Sri Lanka">
+                <option value="Sudan">
+                <option value="Suriname">
+                <option value="Sweden">
+                <option value="Switzerland">
+                <option value="Syria">
+                <option value="Taiwan">
+                <option value="Tajikistan">
+                <option value="Tanzania">
+                <option value="Thailand">
+                <option value="Timor-Leste">
+                <option value="Togo">
+                <option value="Tonga">
+                <option value="Trinidad and Tobago">
+                <option value="Tunisia">
+                <option value="Turkey">
+                <option value="Turkmenistan">
+                <option value="Tuvalu">
+                <option value="Uganda">
+                <option value="Ukraine">
+                <option value="United Arab Emirates">
+                <option value="United Kingdom">
+                <option value="United States">
+                <option value="Uruguay">
+                <option value="Uzbekistan">
+                <option value="Vanuatu">
+                <option value="Vatican City">
+                <option value="Venezuela">
+                <option value="Vietnam">
+                <option value="Yemen">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+            </datalist>
+        </div>
+        <button type="submit">Send Booking</button>
+    </form>
+</section>
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}

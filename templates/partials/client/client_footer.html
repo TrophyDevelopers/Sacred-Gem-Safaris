@@ -1,6 +1,6 @@
 {% load static %}
 
-<a href="mailto:edmcdarwin777@gmail.com" class="contact-us"><i class="far fa-envelope"></i></a>
+
 
 <section class="safari-enquiry-section">
     <div class="safari-enquiry-img" style="background-image: url('{% static 'images/img28.jpg' %}')"></div>
@@ -271,28 +271,26 @@
         <div class="main-footer-anchor-details">
             <h3 class="main-footer-dropper">Services</h3>
             <div class="main-footer-dropdown-content">
-                <a href="">Our Packages</a>
-                <a href="">Excursions</a>
-                <a href="">Gear Rentals</a>
-                <a href="">Souvenirs</a>
+                <a href="{% url 'client:guided_quad_bike' %}">Our Packages</a>
+                <a href="{% url 'client:experience' %}">Excursions</a>
+                <a href="{% url 'client:shop' %}">Gear Rentals</a>
+                <a href="{% url 'client:shop' %}">Souvenirs</a>
             </div>
         </div>
         <div class="main-footer-anchor-details">
             <h3 class="main-footer-dropper">Destinations</h3>
             <div class="main-footer-dropdown-content">
-                <a href="">Uganda</a>
-                <a href="">Kenya</a>
-                <a href="">Tanzania</a>
-                <a href="">Rwanda</a>
+                <a href="{% url 'client:bwindi' %}">Uganda</a>
+                <a href="{% url 'client:kenya_intinerary' %}">Kenya</a>
+                <a href="{% url 'client:kigali_intinerary' %}">Rwanda</a>
             </div>
         </div>
         <div class="main-footer-anchor-details">
             <h3 class="main-footer-dropper">About Us</h3>
             <div class="main-footer-dropdown-content">
-                <a href="">About</a>
-                <a href="">Impact</a>
-                <a href="">Articles</a>
-                <a href="">Blogs</a>
+                <a href="{% url 'client:main_about_page' %}">About</a>
+                <a href="{% url 'client:our_impact' %}">Impact</a>
+                <a href="{% url 'client:main_blog_page' %}">Blogs</a>
             </div>
         </div>
     </div>   

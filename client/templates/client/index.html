@@ -1,5 +1,9 @@
 {% extends 'client_base.html' %}
+{% load wagtailcore_tags %}
 
+    ...
+
+{% include_block page.body %}
 {% load static %}
 
 {% block title %}
@@ -9,9 +13,13 @@
 {% block content %}
     
     <section class="hero-section">
+        {% comment %} 
         <video width="100%" height="100%" autoplay loop muted>
             <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
         </video>
+        {% endcomment %} 
+        <div class="safari-journey-section" style="background-image: url('{% static 'images/wateringholehoursfeat.jpg' %}">
+        </div>
         <div class="slogan">
             <div class="slogan-top">experience the</div>
             <div class="slogan-bottom">untamed moment</div>
@@ -24,13 +32,13 @@
     <section class="safari-intro-section">
 
         <div class="safari-intro-photos transition-imgs">
-            <div class="safari-intro-img major-img" style="background-image: url('{% static 'images/img30.jpg' %}')"></div>
-            <div class="safari-intro-img sub-img" style="background-image: url('{% static 'images/img2.jpg' %}')"></div>
+            <div class="safari-intro-img major-img" style="background-image: url('{% static 'images/backpack.jpg' %}')"></div>
+            <div class="safari-intro-img sub-img" style="background-image: url('{% static 'images/eagle.jpg' %}')"></div>
         </div>
 
         <div class="safari-intro-content">
             <h3>We are Sacred gem safari</h3>
-            <h1>Your number one tour companion Discover Africa's ultimate, untamed places</h1>
+            <h1>Your number one tour companion. Discover Africa's ultimate, untamed places</h1>
             <div class="safari-intro-text">
                 Welcome to Sacred Gem Safari, your premier destination for exploring Africa's untamed wonders! As the world's leading conservation and hospitality company, we proudly safeguard our planet's significant wild places. Our vast, remote destinations offer true wilderness experiences across 6 million acres of private land. Recently rebranded from Wilderness Safaris to Wilderness, we maintain the same core values and unwavering commitment to conservation. Join us for intimate wildlife encounters that promise to change you forever. Embrace the new era of discovery with Sacred Gem Safari!
             </div>
@@ -45,24 +53,38 @@
         </div>
         <div class="destination-curosel">
             <div class="destination-curosel-profile">
-                <div class="destination-name">Location 1</div>
-                <div class="destination-img" style="background-image: url('{% static 'images/img1.jpg' %}')"></div>
+                <div class="destination-name">Buhoma Lodge</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/buhoma-1.jpg' %}')"></div>
                 <div class="destination-info">                    
-                    <a href="{% url 'client:main_destination_page'%}">Visit Location 1</a>
+                    <a href="{% url 'client:buhoma'%}">Visit Buhoma Lodge</a>
                 </div>
             </div>
             <div class="destination-curosel-profile">
-                <div class="destination-name">Location 2</div>
-                <div class="destination-img" style="background-image: url('{% static 'images/img19.jpg' %}')"></div>
+                <div class="destination-name">Nkuringo Lodge</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/nku.jpg' %}')"></div>
                 <div class="destination-info">
-                    <a href="{% url 'client:main_destination_page'%}">Visit Location 2</a>
+                    <a href="{% url 'client:nkuringo'%}">Visit Nkuringo Lodge</a>
                 </div>
             </div>
             <div class="destination-curosel-profile">
-                <div class="destination-name">Location 3</div>
-                <div class="destination-img" style="background-image: url('{% static 'images/img22.jpg' %}')"></div>
+                <div class="destination-name">murchison Falls National Park</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/Murchison-Falls-National-Park.jpg' %}')"></div>
                 <div class="destination-info">
-                    <a href="{% url 'client:main_destination_page'%}">Visit Location 3</a>
+                    <a href="{% url 'client:murchison'%}">Visit murchison Falls</a>
+                </div>
+            </div>
+            <div class="destination-curosel-profile">
+                <div class="destination-name">Kidepo Valley National Park</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/mutanda-1.jpg' %}')"></div>
+                <div class="destination-info">
+                    <a href="{% url 'client:kidepo'%}">Visit Kidepo Valley</a>
+                </div>
+            </div>
+            <div class="destination-curosel-profile">
+                <div class="destination-name">Mutanda Lake Resort</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/mutanda-1.jpg' %}')"></div>
+                <div class="destination-info">
+                    <a href="{% url 'client:mutanda'%}">Visit Mutanda Lake Resort</a>
                 </div>
             </div>
             <div class="control-btn">
@@ -74,7 +96,7 @@
 
     </section>
 
-    <section class="safari-journey-section" style="background-image: url('{% static 'images/lion1.jpg' %}')">
+    <section class="safari-journey-section" style="background-image: url('{% static 'images/wateringholehoursfeat.jpg' %}')">
         <h1>Tailor-made itineraries for every traveller</h1>
         <div class="safari-journey-text home-page">We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild.</div>
         <a href="{% url 'client:particular_experience_page' %}" class="scrollable-link">
@@ -93,55 +115,55 @@
         </div>
 
         <div class="experience-carousel">
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:bwindi_intinerary' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
-                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/nkuringo_lodge.jpg' %}')"></div>
                 <div class="experience-details">
-                    <h3>Name 1</h3>
-                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    
+                    <div class="experience-description">Nkuringo offers luxury accommodation for gorilla trekking south of Bwindi Impenetrable Forest with incredible views of the Virunga Mountains and Bwindi Impenetrable Forest.</div>
                     <hr>
-                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 1</div>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Nkuringo Bwindi Gorilla Lodge</div>
                 </div>
             </a>
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:bwindi_intinerary' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
-                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/buhoma_lodge.jpg' %}')"></div>
                 <div class="experience-details">
-                    <h3>Name 2</h3>
-                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    
+                    <div class="experience-description">Buhoma Lodge is an intimate and charming lodge for gorilla trekking safaris that commands spectacular views of the Bwindi Impenetrable Forest.</div>
                     <hr>
-                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 2</div>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Buhoma Lodge</div>
                 </div>
             </a>
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:bwindi_intinerary' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
-                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/mutanda_lake_resort.jpg' %}')"></div>
                 <div class="experience-details">
-                    <h3>Name 3</h3>
-                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    
+                    <div class="experience-description">Mutanda Lake Resort is perched on the Lake Mutanda peninsula with fantastic views across the lake and the overpowering Virunga Mountains peaks.</div>
                     <hr>
-                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 3</div>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Mutanda Lake Resort</div>
                 </div>
             </a>
                
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:kigali_intinerary' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
-                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/five-volcanoes.jpg' %}')"></div>
                 <div class="experience-details">
-                    <h3>Name 4</h3>
-                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    
+                    <div class="experience-description">Volcanoes Boutique Hotel offers a harmonious blend of luxurious comfort and immersive natural beauty for an unforgettable gorilla safari in Rwanda.</div>
                     <hr>
-                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 4</div>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Five Volcanoes Boutique Hotel</div>
                 </div>
             </a>      
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:kigali_intinerary' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
-                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/mountaingorilla.jpg' %}')"></div>
                 <div class="experience-details">
-                    <h3>Name 5</h3>
-                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    
+                    <div class="experience-description">Mountain Gorilla View Lodge, where rustic elegance meets the untamed wilderness, provides a great retreat just moments away from Rwanda's majestic mountain gorillas.</div>
                     <hr>
-                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 5</div>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Mountain Gorilla View Lodge</div>
                 </div>
             </a>      
             <div class="control-btn">
@@ -157,7 +179,7 @@
     </section>
 
     <section class="safari-iconic-section">
-        <div class="safari-iconic-section-img" style="background-image: url('{% static 'images/img5.jpg' %}')"></div>
+        <div class="safari-iconic-section-img" style="background-image: url('{% static 'images/orangutan.jpg' %}')"></div>
         <h1>why travel with us</h1>
         <div class="iconic-message">
             Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
@@ -165,9 +187,9 @@
         <div class="safari-iconic-dropdown-section">
             <div class="dropdown-btns">
                 <button class="dropdown-btn" onclick="toggleDropdown(this)">wildlife <i class="fas fa-angle-down"></i></button>
-                <button class="dropdown-btn" onclick="toggleDropdown(this)">architecture <i class="fas fa-angle-down"></i></button>
-                <button class="dropdown-btn" onclick="toggleDropdown(this)">culture <i class="fas fa-angle-down"></i></button>
-                <button class="dropdown-btn" onclick="toggleDropdown(this)">professionalism <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">landscape <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">ecosystems <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">weather <i class="fas fa-angle-down"></i></button>
             </div>
             <hr>
             <div class="dropdown-content">
@@ -175,17 +197,17 @@
                 <div class="dropdown-content-detail">
                     <h1>incredible wildlife encounter</h1>
                     <div class="dropdown-content-message">
-                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                        There are many incredible organisations involved in the rescue, rehabilitation and conservation of wildlife. Often these sanctuaries offer unique opportunities to get close-up to wildlife that have been habituated to human presence. It’s very important to only support those centres where animals are treated compassionately, kept in researched and humane facilities, and offer ethical interactions which are sensitive to the welfare of the animal.
                     </div>
                 </div>
             </div>
 
             <div class="dropdown-content">
-                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/landscape.jpg' %}')"></div>
                 <div class="dropdown-content-detail">
-                    <h1>incredible architecture</h1>
+                    <h1>incredible landscape</h1>
                     <div class="dropdown-content-message">
-                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                        Uganda is a unique Africa safari destination compared to its eastern counterparts. On your Uganda safari holiday, you should expect a more varied landscape from the savannah plains to the rugged western region filled with various game, primates, and unique bird species.
                     </div>
                 </div>
             </div>
@@ -195,15 +217,15 @@
                 <div class="dropdown-content-detail">
                     <h1>magineficent culture</h1>
                     <div class="dropdown-content-message">
-                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                        Uganda presents incredible opportunities for face-to-face encounters with mountain gorillas. Whether you choose the ancient Bwindi Impenetrable Forest or the captivating Mgahinga Gorilla Park, you will be immersed in the natural beauty of these habitats and have the chance to witness the majesty of gorillas up close.
                     </div>
                 </div>
             </div>
 
             <div class="dropdown-content">
-                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/luxury.jpg' %}')"></div>
                 <div class="dropdown-content-detail">
-                    <h1>our professionalism</h1>
+                    <h1>our weather </h1>
                     <div class="dropdown-content-message">
                         Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
                     </div>
@@ -250,13 +272,13 @@
     </section>
     
     <section class="gear-shop-section">
-        <div class="gear-shop-img" style="background-image: url('{% static 'images/img20.jpg' %}')">
-            <h1>an experience for every taste</h1>
+        <div class="gear-shop-img" style="background-image: url('{% static 'images/shop.jpg' %}')">
+            <h1>Visit our shop for souveniers</h1>
         </div>
         <div class="gear-shop-content">
-            Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+            Uganda has a rich culture and visitors can find unique and traditional souvenirs such as handmade crafts, pottery, fabrics, and wooden carvings.
         </div>
-        <a href="">view our gearstore</a>
+        <a href="{% url 'client:shop' %}">gear store</a>
     </section>
 
     {% include 'partials/client/client_footer_home.html' %}

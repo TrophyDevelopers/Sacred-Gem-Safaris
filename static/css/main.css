@@ -1,7 +1,7 @@
 *{
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant Garamond', sans-serif;
     letter-spacing: 1px;
     line-height: 30px;
     color: #100C08;
@@ -69,7 +69,7 @@ h3 {
     letter-spacing: 1.618px;
     margin-top: 30px;
     font-weight: bolder;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Atyp', serif;
 }
 
 h1 {
@@ -79,7 +79,7 @@ h1 {
     text-transform: capitalize;
     margin-top: 30px;
     font-weight: bolder;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Atyp', serif;
 }
 
 a, button{
@@ -101,5 +101,6 @@ a, button{
 
     }
 }
+
 
 

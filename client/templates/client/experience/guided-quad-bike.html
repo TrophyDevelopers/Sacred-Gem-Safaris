@@ -1,0 +1,236 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+   Guided Quad Biking
+{% endblock title %}
+
+{% block content %}
+
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/Quad-Biking-tour.jpg' %}')"></div>
+</section>
+
+<section class="authentic-experience-section">
+    <h1>Guided Quad Biking</h1>
+    <div class="authentic-experience-photos transition-imgs">
+        <div class="authentic-experience-imgs main-img" style="background-image: url('{% static 'images/Quad-Biking-and-Horse-Riding.jpg' %}')"></div>
+        <div class="authentic-experience-imgs sub-img" style="background-image: url('{% static 'images/portal_cover.jpg' %}')"></div>
+    </div>
+    <div class="authentic-experience-content">
+        <h3>quad biking will captivate your heart and soul</h3>
+        <div class="authentic-experience-details">Quad biking is one of the most exciting activities to engage in while touring Jinja town. The activity is organized in other parts of Uganda but not as popular as it is in Jinja town.
+            What makes Quad biking special in Jinja, is the opportunity to experience the African countryside and mingle with local people as they go about their daily activities. Most African safaris occur in the African wilderness, inside a safari vehicle and with limited opportunities to experience the African rural life. Quad biking in Jinja is done mainly in the villages, forests, tea/sugar plantations and the banks of the Nile River. 
+        </div>
+    </div>
+    <div class="authentic-experience-content">
+        <h3>our experiences</h3>
+        <div class="authentic-experience-details">Quad biking is open to individuals of at least 12 years. There is no limit to the number of participants and the activity can go on for up to four hours. Quad biking can be arranged for between one and four hours. The Quad companies usually provide all the required equipment including guides, overalls and goggles. The exercise begins with a briefing and free training lessons at the practice circuit for about 30 minutes. One does not need to have experience with the bikes in order to participate. The topics covered are generally about how to manage the bike on the road. Things like how to change gear, maintain stability, remain on track and look out for local kids crossing the road. Apart from general safety measures, participants are also warned about unnecessary overtaking/competition (as tempting as it is) and killing local animals.</div>
+    </div>
+</section>
+
+<section class="luxurious-experience-section">
+    {% comment %} <div class="luxurious-experience-img-video" style="background-image: url('{% static 'images/img6.jpg' %}')"></div> {% endcomment %}
+    <div class="safari-iconic-dropdown-section luxurious-experience">
+        <div class="dropdown-btns">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">birding <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">game drives <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">gollira trecking <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">nature walk <i class="fas fa-angle-down"></i></button>
+        </div>
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible wildlife encounter</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible architecture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>gorilla trekking</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>nature walk</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<section class="paticular-destination-packges-section experiences-intinary">
+    <h1>explore the Guided Quad Biking packages</h1>
+    <div class="experiences-intinary-details">
+        Drive yourself, guided adventure and sightseeing ATV / Quadbike Safaris. You don’t need any previous experience, we provide a training / practice session before each trip. All Terrain Adventures use easy to ride ATVs (All Terrain Vehicles) / Quadbikes to explore the tracks and trails beside the Nile; connecting small villages and farms for many kilometers downstream from our base at Bujagali Falls. A special way to see the headwaters at the start of the Victoria Nile.
+        Rates are specifieUSD$ and you can also pay using Ugandan Shillings (UGX), Euros, d in GB Pounds or Kenyan shillings at current rates.
+    </div>
+    <hr>
+    <div class="paticular-destination-packges">
+        <a href="{% url 'client:bwindi_intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/kyabirwa.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>Kyabirwa Village Safari</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    1 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 85/person
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'client:bwindi_intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/explorer.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>Explorer ATV Quadbike Safari</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    1 Day
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 100/person
+                </p>               
+            </div>
+        </a>
+        <a href="{% url 'client:bwindi_intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/twilight.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>Twilight Safari</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    1 Day
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 125/person
+                </p>            
+            </div>
+        </a>
+        <a href="{% url 'client:bwindi_intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/river.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>River Nile Safari</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    1 Day
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 145/person
+                </p>            
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="experience-variety-section">
+    <div class="experience-variety-img"  style="background-image: url('{% static 'images/Quad-Biking-tour-Lake-Mburo-National-Park.jpg' %}')">
+        <h1>Variety is what we offer</h1>
+    </div>
+    <div class="experience-variety-details">
+        Training / practice session then 2 hour drive yourself safari. Our most popular trip. Easy trails make up the start of the trip and then you have the option of more ‘technical’ sections if suitable. Explore the area near Bujagali through Kyabirwa Village, beside The Nile and through farmland and forest. See places that most visitors never get to. No minimum number for this safari.
+    </div>
+    <a href="{% url 'client:bwindi_intinerary' %}"><i class="fa fa-angle-right"></i>VIEW ALL PACKAGES</a>
+</section>
+<section class="bloging-article-categories blogs">
+    <h1>stories and blogs</h1> 
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="view-all-blogs"> <i class="fas fa-angle-right"></i> View all blogs</a>
+
+</section>
+
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}
+

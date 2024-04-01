@@ -1,0 +1,10 @@
+Django
+pytz
+sqlparse
+wagtail==6.0.1
+wagtailcodeblock
+wagtailmenus
+webencodings
+Willow
+django-el-pagination
+Markdown

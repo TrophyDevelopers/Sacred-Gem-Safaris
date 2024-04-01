@@ -444,6 +444,8 @@
 
 .slogan-bottom {
     font-size: calc(2rem * 1.618); 
+    font-family: 'Cormorant Garamond', serif;
+    
     font-weight: 600;
     animation: slideInLeft 1.5s ease-out forwards;
 }
@@ -518,6 +520,8 @@ hr {
     }
 
     .slogan-bottom{
+        font-family: 'Cormorant Garamond', serif;
+        font-optical-sizing: auto;
         font-size: calc(1rem * 1.618);
     }
 
@@ -886,7 +890,7 @@ hr {
     transition: opacity 3s ease-in-out;
     color: #ccc;
     font-weight: 600;
-    font-family: 'Cormorant Garamond', serif;
+    ffont-family: 'Cormorant Garamond', serif;
 }
 
 .scrollable-link.scroll-active i {
@@ -1130,7 +1134,7 @@ hr {
 .experience-details .experience-location i {
     font-size: 1.2rem;
     background-color: transparent;
-    font-family: fontawesome;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .experience-all-packages{

@@ -1,5 +1,9 @@
 {% extends 'client_base.html' %}
+{% load wagtailcore_tags %}
 
+    ...
+
+{% include_block page.body %}
 {% load static %}
 
 {% block title %}
@@ -194,7 +198,7 @@
         <div class="dropdown-content">
             <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
             <div class="dropdown-content-detail">
-                <h1>magineficent culture</h1>
+                <h1>gorilla trekking</h1>
                 <div class="dropdown-content-message">
                     Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
                 </div>
@@ -204,7 +208,7 @@
         <div class="dropdown-content">
             <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
             <div class="dropdown-content-detail">
-                <h1>our professionalism</h1>
+                <h1>nature walk</h1>
                 <div class="dropdown-content-message">
                     Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
                 </div>
